@@ -1,0 +1,144 @@
+
+body {
+  background: #000;
+  font-family: var(--badan1-font);
+}
+.box-content {
+  padding: 0 1rem;
+  grid-column: span 1;
+  padding: 6rem 2% 1rem;
+}
+
+h1, h3 {
+  text-align: center;
+  color: var(--text);
+}
+
+h3 span {
+  color: var(--bash);
+}
+#board {
+  width: 700px;
+  height: 500px;
+  background: url('../img/background000.jpg');
+  background-size: 100% 100%;
+  margin: 20px auto;
+}
+#area {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+@keyframes run {
+  0% {
+    background: url('../hero/hero0.png');
+    background-size: 100% 100%;
+  }
+  30% {
+    background: url('../hero/hero1.png');
+    background-size: 100% 100%;
+  }
+  80% {
+    background: url('../hero/hero2.png');
+    background-size: 100% 100%;
+  }
+}
+#textsp {
+  width: 190px;
+  height: 190px;
+  background: url('../img/plang.png');
+  background-size: 100% 100%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#hero {
+  width: 100px;
+  height: 100px;
+  background: url('../hero/hero0.png');
+  background-size: 100px 100px;
+  position: absolute;
+  margin-top: 390px;
+  margin-left: 50px;
+  animation: run 0.4s infinite;
+  transition: 1s;
+}
+#hero.jumps {
+  animation: none;
+  display: flex;
+  background: url('../hero/hero0.png');
+  background-size: 100% 100%;
+}
+
+#rock {
+  width: 80px;
+  height: 80px;
+  background: url('../img/rock.png');
+  background-size: 100% 100%;
+  margin-top: 390px;
+  margin-left: 700px;
+}
+
+#herojump {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: url('../img/jumps.png');
+  background-size: 100% 100%;
+  margin-top: -50px;
+  margin-left: 300px;
+}
+
+#herojump:active {
+  transform: translateY(10px);
+}
+#gameOverPopup {
+ display: none;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: var(--alpa);
+ border: 2px solid var(--pita);
+ padding: 10px;
+ width: 80%;
+ height: 60%;
+ text-align: center;
+ z-index: 9999;
+}
+#gameOverPopup p {
+  align-items: center;
+}
+
+#gameOverPopup p span {
+  color: var(--pita);
+}
+#gameOverPopup button {
+  font-family: var(--badan1-font);
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 1400px) {
+
+
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+
+#board, #area {
+  width: 400px;
+}
+
+#rock {
+  margin-left: 400px;
+}
+
+
+}
+
