@@ -1,0 +1,46 @@
+#gameOverPopup {
+ display: none;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: var(--alpa);
+ border: 2px solid var(--pita);
+ padding: 10px;
+ width: 80%;
+ height: 60%;
+ text-align: center;
+ z-index: 9999;
+}
+#gameOverPopup h2, .final {
+  align-items: center;
+}
+#gameOverPopup p {
+  align-items: justify;
+}
+#gameOverPopup p span {
+  color: var(--pita);
+}
+#gameOverPopup button {
+  font-family: var(--badan1-font);
+  font-weight: bold;
+}
+
+#gameOverPopup .pgf-end {
+  text-align: justify;
+  font-size: 10px;
+}
+#gameOverPopup .pgf-end h4 {
+  font-size: 20px;
+  color: var(--pita);
+}
+
+#gameOverPopup .pgf-end p {
+  font-style: italic;
+  text-align: justify;
+}
+
+#gameOverPopup .pgf-end p span {
+  color: var(--pita);
+  font-weight: bold;
+}
