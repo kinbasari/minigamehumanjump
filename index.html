@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kavoon&family=Miltonian+Tattoo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rum+Raisin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kinbasari/minigameguesscolor/styles/mystyle.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/popup.css">
   <title>Mini Game Human Jump</title>
 
 </head>
@@ -33,12 +34,19 @@
 
 <!-- Popup Game Over (Initially Hidden) -->
 <div id="gameOverPopup">
-  <p></p> <br>
   <h2 id="gameOverMessage">Game Over</h2>
-  <p>Skormu <span id="finalScore">0</span></p>
+  <p class="final">Skormu <span id="finalScore">0</span></p>
   <button onclick="location.reload()">Restart</button>
+  <div class="pgf-end">
+  <h4>Aturan permainan:</h4>
+  <p><span>1. Tujuan permainan: </span>kamu harus membantu karakter utama berlari sejauh mungkin tanpa menabrak box (kotak) yang ada di lintasan.</p>
+  <p><span>2. Kontrol Permainan: </span>Gunakan tombol "Jump" untuk melompat dengan waktu yang tepat agar karakter berhasil melompati box.</p>
+  <p><span>3. Aturan dasar: </span>Karakter akan terus berlari secara otomatis, dan box akan muncul di lintasan secara acak, dengan jarak dan ukuran yang bervariasi. Jika karakter menabrak box, permainan akan berakhir (Game Over).</p>
+  <p><span>4. Skor: </span>Skor dihitung berdasarkan jarak yang ditempuh oleh karakter.</p>
+  </div>
 </div>
 
+  
 <!--  Audio Player -->
 <audio id="audioLoop" src="sound/musicthemeplay.mp3" loop></audio>
 <audio id="audioPlayer"></audio>
